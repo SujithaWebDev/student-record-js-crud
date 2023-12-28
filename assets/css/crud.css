@@ -1,0 +1,355 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.gridlayout {
+    width: 95%;
+    margin: auto;
+    /* height: 100vh;
+    background-color: rgb(79, 94, 109); */
+}
+
+.student h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    animation-name: h1anime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+
+}
+
+@keyframes h1anime {
+    0% {
+        width: 42%;
+        background-image: linear-gradient(109.6deg, rgba(247, 253, 166, 1) 11.2%, rgba(128, 255, 221, 1) 57.8%, rgba(255, 128, 249, 1) 85.9%);
+    }
+
+    50% {
+        width: 65%;
+        background-image: linear-gradient(109.6deg, rgba(61, 245, 167, 1) 11.2%, rgba(9, 111, 224, 1) 91.1%);
+    }
+
+    75% {
+        width: 80%;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+    }
+
+    100% {
+        width: 100%;
+        background-image: linear-gradient(173.1deg, rgba(226, 66, 249, 0.94) 10.2%, rgba(79, 147, 249, 1) 77.3%);
+    }
+}
+
+.formcontent {
+    text-align: center;
+    margin: 119px auto;
+    box-shadow: 20px 20px linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    width: 30%;
+    border-radius: 4%;
+    padding: 20px 47px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 160, 187, 1) 0%, rgba(0, 188, 219, 0.90) 90%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #1fabf0;
+}
+
+.formcontent:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    background-position: right center;
+
+}
+
+.formcontent label {
+    font-weight: bolder;
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.formcontent input {
+    border: 1px solid #61F2D5;
+    border-radius: 4%;
+
+}
+
+.formcontent input:hover {
+    background:
+        linear-gradient(to right, white, white),
+        linear-gradient(to right, #00DBDE 0%, #FC00FF 100%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-color: #00DBDE;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px #eee;
+}
+
+.namediv {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.agediv {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.emaildiv {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.phonediv {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#formid input {
+    padding: 14px;
+    width: 260px;
+
+}
+
+.formcontent button {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    padding: 17px 52px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    border: none;
+    margin: 15px auto;
+    font-size: 16px;
+
+}
+
+#backbtn {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    padding: 17px 52px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    border: none;
+    margin: 15px auto;
+    font-size: 16px;
+}
+
+.backbtndiv {
+    text-align: center;
+    margin: 46px;
+}
+
+.formcontent button:hover {
+    background-position: right center;
+}
+
+.nameinputtag1,
+.ageinputtag1,
+.phoneinputtag1,
+.emailinputtag1 {
+    border: 1px solid transparent;
+    margin: 6px -6px 0px 58px;
+    background: linear-gradient(to right, white, white), linear-gradient(to right, #00DBDE 0%, #FC00FF 100%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-color: #00DBDE;
+    color: #8E54E9;
+    padding: 10px;
+    width: 14%;
+
+}
+
+input:hover,
+.nameinputtag1:hover,
+.ageinputtag1:hover,
+.phoneinputtag1:hover,
+.emailinputtag1:hover {
+    box-shadow: 2px 1px #b5e8de;
+}
+
+.addingname {
+    margin: 49px 62px 0px;
+}
+
+.addingname ul {
+    display: flex;
+    list-style-type: none;
+    gap: 212px;
+    margin-left: 145px;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.deletebtncss {
+    content: url(../images/delIcon.png);
+    width: 25px;
+    margin: 6px 0px 0px 55px;
+    position: absolute;
+}
+
+.editbtncss {
+    content: url(../images/editIcon.png);
+    width: 25px;
+    margin: 6px 0px 0px 145px;
+    position: absolute;
+}
+
+.savebtncss {
+    content: url(../images/check-circle-.png);
+    width: 25px;
+    margin: 6px 0px 0px 235px;
+    position: absolute;
+}
+
+.savebtncss:hover,
+.editbtncss:hover,
+.deletebtncss:hover {
+    width: 28px;
+}
+
+.newdivbg {
+    border: 1px solid linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    width: 100%;
+    height: 38px;
+    margin: 10px 0px;
+
+}
+
+@media screen and (max-width:500px) {
+    .student h1 {
+        font-size: 15px;
+    }
+
+    .formcontent label {
+        font-size: 10px;
+    }
+
+    .namediv,
+    .agediv,
+    .emaildiv,
+    .phonediv {
+        margin: 0px;
+        gap: 18px;
+    }
+
+    .formcontent button,
+    #backbtn {
+
+        padding: 10px 31px;
+    }
+
+    .formcontent {
+        width: 59%;
+
+    }
+
+    #formid input {
+        padding: 9px;
+        width: 144px;
+    }
+
+    #formid input::placeholder {
+        font-size: 10px;
+    }
+
+    .addingname {
+        margin: 27px 3px 0px;
+    }
+
+    .addingname ul {
+        display: inline-flex;
+        gap: 25px;
+        margin-left: 2px;
+    }
+
+    .nameinputtag1,
+    .ageinputtag1,
+    .phoneinputtag1,
+    .emailinputtag1 {
+        height: 12px;
+        width: 58px;
+        margin: 0px;
+        font-size: 10px;
+    }
+
+    .deletebtncss {
+        width: 19px;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .editbtncss {
+        width: 19px;
+        margin: 0px 0px 0px 40px;
+    }
+
+    .savebtncss {
+        width: 19px;
+        margin: 0px 0px 0px 70px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:850px) {
+    .formcontent {
+        width: 55%;
+    }
+
+    .nameinputtag1,
+    .ageinputtag1,
+    .phoneinputtag1,
+    .emailinputtag1 {
+        margin: 6px 28px 0px -45px;
+        width: 24%;
+    }
+
+    .newdivbg {
+        width: 92%;
+    }
+
+    .addingname ul {
+        gap: 78px;
+        margin-left: 22px;
+    }
+
+    .deletebtncss {
+        width: 22px;
+        margin: 8px 0px 0px 0px
+    }
+
+    .editbtncss {
+        width: 22px;
+        margin: 8px 0px 0px 44px
+    }
+
+    .savebtncss {
+        width: 22px;
+        margin: 8px 0px 0px 88px
+    }
+}

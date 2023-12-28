@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record Management: Streamline Education with Efficient CRUD Operations. Seamlessly Manage Student Data with Comprehensive Create, Read, Update, and Delete Functions. Empower Educational Institutions with User-Friendly Record Keeping. Access Real-Time Insights, Track Progress, and Enhance Administrative Efficiency. Elevate the Student Experience through Intuitive CRUD Operations – Transforming Academic Data Management for a Smarter Educational Journey.</title>
+  <link rel="stylesheet" href="./assets/css/crud.css">
+  <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("hKmt59lmkg6e4Pqaw");
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="gridlayout">
+    <!-- onsubmit="validate(event)" -->
+    <form id="formid" action="#">
+      <div class="student">
+        <h1>STUDENTS RECORD</h1>
+        <div class="formcontent">
+          <div class="namediv">
+            <label class="namelabel">NAME :</label>
+            <input type="text" class="nameinputtag" id="name" placeholder="Enter your Name" required/>
+          </div>
+          <div class="agediv">
+            <label class="agelabel">AGE :</label>
+            <input type="text" class="ageinputtag" id="age" placeholder="Enter your age" required>
+          </div>
+          <div class="emaildiv">
+            <label class="emaillabel">EMAIL :</label>
+            <input type="email" class="emailinputtag" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="phonediv">
+            <label class="phonelabel">PHONE :</label>
+            <input type="tel" class="phoneinputtag" id="phone" placeholder="Enter your Phone number" required>
+          </div>
+          <button class="registerbutton" type="submit">SAVE</button>
+        </div>
+      </div></form>
+      <div class="backbtndiv">
+        <button id="backbtn">BACK</button>
+      </div>
+    <div class="addingname">
+      <ul>
+        <li>NAME</li>
+        <li>AGE</li>
+        <li>EMAIL</li>
+        <li>PHONE</li>
+      </ul>
+  
+    </div>
+  </div>
+  
+  <script>
+    let name = document.querySelector("#name");
+    let age = document.getElementById("age");
+    let email = document.querySelector("#email");
+    let phone = document.querySelector("#phone");
+    let btn = document.querySelector(".registerbutton");
+    let addingname = document.querySelector(".addingname");
+    let backbtn=document.querySelector("#backbtn");
+    let form=document.querySelector(".formcontent");
+    backbtn.style.visibility="hidden";
+    addingname.style.visibility="hidden";
+    backbtn.addEventListener("click",()=>{
+      form.style.display="block";
+      addingname.style.visibility="hidden";
+      backbtn.style.visibility="hidden";
+    })
+    btn.addEventListener("click", function crudop() {
+      backbtn.style.visibility="visible";
+      form.style.display = "none";
+      addingname.style.visibility="visible";
+      let newdiv = document.createElement("div");
+      addingname.appendChild(newdiv);
+      console.log(newdiv);
+      newdiv.classList.add('newdivbg')
+      
+      let newnametag = document.createElement("input");  
+      newnametag.value = name.value;
+      newnametag.setAttribute("readonly", "readonly");
+      newdiv.appendChild(newnametag);
+      newnametag.classList.add('nameinputtag1')
+      
+
+      let newagetag = document.createElement("input");
+      newagetag.value = age.value;
+      newagetag.setAttribute("readonly", "readonly");
+      newdiv.appendChild(newagetag);
+      newagetag.classList.add('ageinputtag1')
+
+      let newmailtag = document.createElement("input");
+      newmailtag.value = email.value;
+      newmailtag.setAttribute("readonly", "readonly");
+      newdiv.appendChild(newmailtag);
+      newmailtag.classList.add('emailinputtag1')
+      
+
+      let newphonetag = document.createElement("input");
+      newphonetag.value = phone.value;
+      newphonetag.setAttribute("readonly", "readonly");
+      newdiv.appendChild(newphonetag);
+      newphonetag.classList.add('phoneinputtag1')
+      
+
+      let deletebtn = document.createElement("a")
+      // deletebtn.innerHTML = "Delete";
+      newdiv.appendChild(deletebtn);
+      deletebtn.addEventListener("click", () => {
+        newdiv.style.display = "none";
+      })
+      deletebtn.classList.add('deletebtncss')
+
+      let editbtn = document.createElement("a")
+      // editbtn.innerHTML = "Edit";
+      newdiv.appendChild(editbtn);
+      editbtn.addEventListener("click", () => {
+        newnametag.removeAttribute("readonly", "readonly");
+        newagetag.removeAttribute("readonly", "readonly");
+        newmailtag.removeAttribute("readonly", "readonly");
+        newphonetag.removeAttribute("readonly", "readonly");
+      })
+      editbtn.classList.add('editbtncss')
+
+      let savebtn = document.createElement("a")
+      // savebtn.innerHTML = "Save";
+      newdiv.appendChild(savebtn);
+      savebtn.addEventListener("click", () => {
+        newnametag.setAttribute("readonly", "readonly");
+        newagetag.setAttribute("readonly", "readonly");
+        newmailtag.setAttribute("readonly", "readonly");
+        newphonetag.setAttribute("readonly", "readonly");
+      })
+      savebtn.classList.add('savebtncss');
+
+      const data = {
+        from_name: document.querySelector(".nameinputtag").value,
+        age: document.querySelector(".ageinputtag").value,
+        email_id: document.querySelector(".emailinputtag").value,
+        phone: document.querySelector(".phoneinputtag").value,
+        message: document.querySelector(".phoneinputtag").value,
+      }
+      emailjs.send("service_kjn74da", "template_6b0s99d", data).then(() => {
+        // alert("submitted")
+        console.log("Email sent through Email JS")
+      })
+    })
+  </script>
+</body>
+
+</html>
